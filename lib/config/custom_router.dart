@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/screens/screens.dart';
+import 'package:instagram_clone/screens/signup/signup_screen.dart';
 
 class CustomRouter {
   static Route onGenerateRoute(RouteSettings settings) {
@@ -15,6 +16,9 @@ class CustomRouter {
 
       case LoginScreen.routeName:
         return LoginScreen.route();
+
+      case SignupScreen.routeName:
+        return SignupScreen.route();
 
       case NavScreen.routeName:
         return NavScreen.route();
